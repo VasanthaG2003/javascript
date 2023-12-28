@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+<body>
+    <center>
+        <h1>Condition statements..!</h1>
+    </center>
+
+    <hr>
+
+    <ol>
+        <li>Simple if</li>
+        <li>If else</li>
+        <li>If Else Ladder</li>
+        <li>Switch case</li>
+    </ol>
+    <hr>
+
+
+    <input type="text" name="firstNumber" id="firstNumber" placeholder="First Number">
+    <input type="text" name="secondNumber" id="secondNumber" placeholder="Second Number">
+
+    <button type="button" onclick="testCondition()">Result</button>
+    <script>
+        function testCondition(){
+            let firstNumber = document.getElementById('firstNumber').value;
+            let secondNumber = document.getElementById('secondNumber').value;
+
+            /*if (firstNumber == secondNumber) {
+                alert("Condition is true..!");
+            } else{
+                alert("Condition is not true..!");
+            } */ 
+
+            let message = firstNumber > secondNumber ? "Condition is true..!" : "Condition is not true..!";
+
+            document.write(message);
+        }
+        //testCondition();
+    </script>
+</body>
+</html>
